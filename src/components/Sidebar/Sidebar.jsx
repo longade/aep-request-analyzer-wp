@@ -27,7 +27,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </SidebarMenu>
                 </ListItem>
                 <ListItem style={{ display: 'flex', justifyContent: 'center' }}>
-                    <ButtonWrap title='Download from CWS' />
+                    <ButtonWrap title='Download from CWS' to='/' />
                 </ListItem>
             </List>
         </Box>

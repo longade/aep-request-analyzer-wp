@@ -1,0 +1,22 @@
+.feature-container-div {
+    background: #0bad8e;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px;
+}
+.div-video {
+    width: 800px;
+    height: 430px;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: 100%
+    }
+};
+.example-video {
+    width: 100%;
+    height: auto;
+}

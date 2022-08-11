@@ -1,11 +1,11 @@
-import useStyles from './styles';
+import "./SidebarMenu.scss";
 
-export default function SidebarMenu({ children }) {
-    const classes = useStyles();
-
+const SidebarMenu = ({ children }) => {
     return (
-        <div className={classes.menu}>
+        <div className='menu'>
             {children}
         </div>
     );
 }
+
+export default SidebarMenu;

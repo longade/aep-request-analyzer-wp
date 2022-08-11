@@ -1,10 +1,10 @@
-import useStyles from './styles';
+import "./SocialLogo.scss";
 import { Link } from 'react-router-dom';
 
-export default function SocialLogo() {
-    const classes = useStyles();
-
+const SocialLogo = () => {
     return (
-        <Link className={classes.linkLogo} to='/'>AEP</Link>
+        <Link className='link-logo' to='/'>AEP</Link>
     );
 }
+
+export default SocialLogo;

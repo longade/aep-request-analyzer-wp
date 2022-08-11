@@ -1,7 +1,14 @@
-import HeroContainer from './Container/HeroContainer';
+import "./Hero.scss";
+import HeroItems from "./Items/HeroItems";
 
-export default function Hero() {
-    return (
-        <HeroContainer />
-    )
+const Hero = () => {
+  return (
+    <div className='container-div'>
+      <div className='content-div'>
+        <HeroItems />
+      </div>
+    </div>
+  )
 };
+
+export default Hero;

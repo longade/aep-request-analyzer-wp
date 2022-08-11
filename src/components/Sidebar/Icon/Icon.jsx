@@ -1,12 +1,12 @@
-import useStyles from './styles';
+import "./Icon.scss";
 import { FaTimes } from 'react-icons/fa';
 
-export default function Icon({ toggle }) {
-    const classes = useStyles();
-
+const Icon = ({ toggle }) => {
     return (
-        <div className={classes.icon} onClick={toggle}>
-            <FaTimes className={classes.closeIcon} />
+        <div className='icon' onClick={toggle}>
+            <FaTimes className='closeIcon' />
         </div>
     );
 }
+
+export default Icon;

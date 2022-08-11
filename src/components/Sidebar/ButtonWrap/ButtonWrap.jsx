@@ -1,12 +1,15 @@
-import SidebarRoute from './Route/SidebarRoute';
-import useStyles from './styles';
+import "./ButtonWrap.scss";
+import { Link } from "react-router-dom";
 
-export default function ButtonWrap({ title }) {
-    const classes = useStyles();
+const ButtonWrap = ({ title, to }) => {
 
     return (
-        <div className={classes.buttonWrap}>
-            <SidebarRoute title={title} to='/' />
+        <div className='buttonWrap'>
+            <Link className='route' to={to}>
+                {title}
+            </Link>
         </div>
     );
 }
+
+export default ButtonWrap;

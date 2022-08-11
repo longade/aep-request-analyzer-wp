@@ -1,13 +1,13 @@
-import useStyles from './styles';
+import "./HeroItems.scss";
 
-export default function HeroItems() {
-    const classes = useStyles();
-
+const HeroItems = () => {
     return (
-        <div className={classes.itemsDiv}>
-            <h1 className={classes.h1}>Adobe Experience Platform</h1>
-            <p className={classes.p}>analytics requests analyzer</p>
-            <button className={classes.button}>Go to Chrome Web Store</button>
+        <div className='items-div'>
+            <h1 className='hero-item-h1'>Adobe Experience Platform</h1>
+            <p className='hero-item-p'>analytics requests analyzer</p>
+            <button className='hero-item-button'>Go to Chrome Web Store</button>
         </div>
     );
 }
+
+export default HeroItems;

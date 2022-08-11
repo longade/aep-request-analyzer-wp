@@ -1,11 +1,11 @@
-import useStyles from './styles';
+import "./SocialIconLink.scss";
 
-export default function SocialIconLink({ ariaLabel, childIcon, to }) {
-    const classes = useStyles();
-
+const SocialIconLink = ({ ariaLabel, childIcon, to }) => {
     return (
-        <a className={classes.aIcon} href={to} target='_blank' aria-label={ariaLabel}>
+        <a className='a-icon' href={to} target='_blank' aria-label={ariaLabel}>
             {childIcon}
         </a>
     );
 }
+
+export default SocialIconLink;

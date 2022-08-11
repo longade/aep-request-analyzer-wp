@@ -1,12 +1,12 @@
+import "./SidebarLink.scss";
 import { Link } from 'react-router-dom';
-import useStyles from './styles';
 
-export default function SidebarLink({ title, to }) {
-    const classes = useStyles();
-
+const SidebarLink = ({ title, to }) => {
     return (
-        <Link className={classes.link} to={to}>
+        <Link className='link' to={to}>
             {title}
         </Link>
     );
 }
+
+export default SidebarLink;

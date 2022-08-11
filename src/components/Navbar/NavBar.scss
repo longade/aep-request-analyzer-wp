@@ -1,0 +1,50 @@
+.navMain {
+  position: fixed;
+  width: 100%;
+  background: #0d0909;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    justify-content: space-between
+  }
+}
+
+.divIcon {
+  display: block;
+  color: #fff;
+  flex: 1;
+  position: relative;
+  left: 30px;
+}
+
+.divHomeLink {
+  flex: 1;
+
+  &::after {
+    content: "";
+    flex: 1
+  }
+
+  @media screen and (max-width: 600px) {
+    position: relative;
+    right: 30px;
+    flex: 0
+  }
+}
+
+.linkNav {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+
+  /* @media screen and (max-width: 400px) {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+    } */
+}
+
+;
