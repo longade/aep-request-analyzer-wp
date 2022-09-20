@@ -8,7 +8,7 @@ export const featuresData = [
     alt: 'easy-to-use',
     name: 'Easy to use',
     desc:
-      ' A simple extension to discover what params have been passed to analytics',
+      ' A simple extension to discover which params were sent to Analytics',
   },
   {
     img: balloonsImg,

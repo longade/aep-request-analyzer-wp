@@ -1,13 +1,12 @@
 import "./ButtonWrap.scss";
-import { Link } from "react-router-dom";
 
 const ButtonWrap = ({ title, to }) => {
 
     return (
         <div className='buttonWrap'>
-            <Link className='route' to={to}>
+            <a className='route' href={to} target='_blank' rel="noopener noreferrer">
                 {title}
-            </Link>
+            </a>
         </div>
     );
 }

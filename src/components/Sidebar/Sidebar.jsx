@@ -22,8 +22,9 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </ListItem>
                 <ListItem style={{ display: 'flex', justifyContent: 'center' }}>
                     <SidebarMenu>
-                        <SidebarLink title='Example Video' to='/' />
-                        <SidebarLink title='GitHub' to='/' />
+                        <SidebarLink title='Examples' elementId='#examples' />
+                        <SidebarLink title='GitHub' to='https://github.com/longade/aep-request-analyzer' isExtLink />
+                        <SidebarLink title='Donate' to='https://paypal.me/davidelongo97' isExtLink />
                     </SidebarMenu>
                 </ListItem>
                 <ListItem style={{ display: 'flex', justifyContent: 'center' }}>
