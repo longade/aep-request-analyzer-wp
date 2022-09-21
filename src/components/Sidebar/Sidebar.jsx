@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </SidebarMenu>
                 </ListItem>
                 <ListItem style={{ display: 'flex', justifyContent: 'center' }}>
-                    <ButtonWrap title='Download from CWS' to='/' />
+                    <ButtonWrap title='Download from CWS' to='https://chrome.google.com/webstore/detail/aep-requests-analyzer/ackephkehloidacldkffjpohlhmmnfof' />
                 </ListItem>
             </List>
         </Box>
