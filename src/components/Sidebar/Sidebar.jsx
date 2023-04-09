@@ -36,14 +36,12 @@ const infos = {
 
 const Sidebar = ({ isOpen, toggle }) => {
 
-    const scrollIntoElement = (elementId) => {
+    const scrollIntoElement = React.useCallback((elementId) => {
         const fixedElementId = elementId.startsWith('#') ? elementId : '#' + elementId;
         const element = document.querySelector(fixedElementId);
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setTimeout(() => {
-            toggle();
-        }, 200);
-    }
+        // toggle();
+    }, []);
 
     const list = () => (
         <List>
@@ -56,9 +54,9 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </ListItemIcon>
                 <ListItemText primary="Examples" />
             </ListItemButton>
-            <BrowserAccordion browser={infos.chrome} />
-            <BrowserAccordion browser={infos.firefox} />
-            <ListItemButton component="a" href={"https://paypal.me/davidelongo97"} target='_blank' rel="noopener noreferrer">
+            <BrowserAccordion browser={infos.chrome} toggle={toggle} />
+            <BrowserAccordion browser={infos.firefox} toggle={toggle} />
+            <ListItemButton onClick={toggle} component="a" href={"https://paypal.me/davidelongo97"} target='_blank' rel="noopener noreferrer">
                 <ListItemIcon>
                     <FaPaypal />
                 </ListItemIcon>

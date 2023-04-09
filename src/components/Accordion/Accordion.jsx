@@ -9,7 +9,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import List from '@mui/material/List';
 import { FaDownload, FaGithub } from 'react-icons/fa';
 
-const BrowserAccordion = ({ browser }) => {
+const BrowserAccordion = ({ browser, toggle }) => {
 
     const { browserName, githubInfo, storeInfo } = browser;
 
@@ -29,13 +29,13 @@ const BrowserAccordion = ({ browser }) => {
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    <ListItemButton sx={{ pl: 4 }} component="a" href={githubInfo.link} target='_blank' rel="noopener noreferrer">
+                    <ListItemButton onClick={toggle} sx={{ pl: 4 }} component="a" href={githubInfo.link} target='_blank' rel="noopener noreferrer">
                         <ListItemIcon>
                             <FaGithub />
                         </ListItemIcon>
                         <ListItemText primary="GitHub" />
                     </ListItemButton>
-                    <ListItemButton sx={{ pl: 4 }} component="a" href={storeInfo.link} target='_blank' rel="noopener noreferrer">
+                    <ListItemButton onClick={toggle} sx={{ pl: 4 }} component="a" href={storeInfo.link} target='_blank' rel="noopener noreferrer">
                         <ListItemIcon>
                             <FaDownload />
                         </ListItemIcon>
