@@ -1,0 +1,12 @@
+.link {
+    /* text-decoration: none; */
+    /* list-style: none; */
+    transition: 0.2s ease-in-out;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+        color: #e31837;
+        transition: 0.2s ease-in-out;
+    }
+}

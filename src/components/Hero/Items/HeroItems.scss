@@ -22,11 +22,19 @@
   margin-bottom: 1rem;
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;
+  
+  @media screen and (max-width: 650px) {
+    font-size: 2rem;
+  }
 }
 
 .hero-item-p {
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 650px) {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-item-link {
@@ -37,11 +45,16 @@
   color: #fff;
   text-decoration: none;
   transition: 0.2s ease-out;
+  margin-bottom: 10px;
 
   &:hover {
     background: #ffc500;
     transition: 0.2s ease-out;
     cursor: pointer;
     color: #000;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 1rem;
   }
 }
