@@ -17,7 +17,7 @@ const HeroItems = () => {
       </a>
       <a
         className='hero-item-link'
-        href="/#"
+        href="https://addons.mozilla.org/it/firefox/addon/aep-requests-analyzer"
         target='_blank'
         rel="noopener noreferrer"
       >

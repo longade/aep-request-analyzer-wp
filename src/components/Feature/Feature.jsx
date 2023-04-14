@@ -7,8 +7,11 @@ import sessionExample from "../../images/session_example.png";
 import { Carousel } from 'react-responsive-carousel';
 
 const Feature = () => {
+
+    const divRef = React.useRef();
+
   return (
-    <div id='examples' className='feature-container-div'>
+    <div ref={divRef} id='examples' className='feature-container-div'>
       <div style={{ marginBottom: 20 }} />
       <h4>Examples</h4>
       <div style={{ marginBottom: 20 }} />

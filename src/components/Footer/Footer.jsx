@@ -12,7 +12,7 @@ const Footer = () => {
             <SocialLogo />
             <div className='div-icons'>
               <SocialIconLink ariaLabel={"Instagram"} childIcon={<FaInstagram />} to='https://www.instagram.com/davidelongo97' />
-              <SocialIconLink ariaLabel={"Linkedin"} childIcon={<FaLinkedin />} to='https://it.linkedin.com/in/davide-longo-ab176a173' />
+              <SocialIconLink ariaLabel={"Linkedin"} childIcon={<FaLinkedin />} to='https://it.linkedin.com/in/davide-longo-dl97' />
               <SocialIconLink ariaLabel={"GitHub"} childIcon={<FaGithub />} to='https://www.github.com/longade' />
             </div>
           </div>

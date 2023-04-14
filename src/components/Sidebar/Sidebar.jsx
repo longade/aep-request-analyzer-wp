@@ -27,21 +27,33 @@ const infos = {
             link: "https://github.com/longade/aep-request-analyzer-firefox",
         },
         storeInfo: {
-            link: "/#",
+            link: "https://addons.mozilla.org/it/firefox/addon/aep-requests-analyzer?clickfrom=sidebar",
             icon: <FaFirefoxBrowser />,
             name: "Firefox Addons Page"
         }
     }
 }
 
+const smoothScroll = (element, offset = 0) => {
+    const rect = element.getBoundingClientRect();
+    let targetPosition = rect.top + window.pageYOffset + offset;
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+    });
+
+    return new Promise((resolve, reject) => {
+        resolve();
+    });
+}
+
 const Sidebar = ({ isOpen, toggle }) => {
 
-    const scrollIntoElement = React.useCallback((elementId) => {
+    const scrollIntoElement = (elementId) => {
         const fixedElementId = elementId.startsWith('#') ? elementId : '#' + elementId;
         const element = document.querySelector(fixedElementId);
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // toggle();
-    }, []);
+        smoothScroll(element).then(() => toggle());
+    };
 
     const list = () => (
         <List>
